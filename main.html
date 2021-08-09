@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System||Transfer money</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    #header{
+        height: 100vh;
+        background-image: url("https://wallpaperbat.com/img/372598-innovation-opens-doors-for-banks-in-emerging-markets-accenture.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .container{
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    .logo{
+        margin-top: 30px;
+        width: 100px;
+    }
+    .header-text{
+        max-width: 350px;
+        margin-top: 140px;
+        color: rgb(241, 158, 158);
+    }
+    .h1{
+        font-size: 34px;
+        
+    }
+    
+    .button{
+        padding: 18px 40px;
+        background: transparent;
+        outline:none;
+        border: 2px solid #f67c92;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    p{
+        font-size: 15px;
+        line-height: 20px;
+        color: rgb(232, 185, 253);
+    }
+    .header-text button{
+        margin-top: 20px;
+        margin-bottom: 60px;
+        color: rgb(193, 110, 231);
+        font-size: 80%;
+
+    }
+    
+    .line2{
+        width: 80px;
+        height: 1px;
+        background: #c377e6;
+        display: inline-block;
+    }
+    .line3{
+        width: 60px;
+        height: 1px;
+        background: #f67c92;
+        display: inline-block;
+    }
+    .line{
+        line-height: 8px;
+    }
+    #sideNav{
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        right: -250px;
+        top: 0;
+        background: #a8041f;
+        z-index: 2;
+        transition: .5s;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 50px 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: rgb(248, 230, 230);
+        font-weight: bold;
+    }
+    #menuBtn{
+        width: 50px;
+        position: fixed;
+        right: 65px;
+        top: 35px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .logoParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+    .titlesss{
+        margin-bottom: -5px;
+        color: rgb(210, 179, 223);
+        font-size: 180%;
+        font-weight: bolder;
+        
+    }
+    /*FEATURES*/
+    #features{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-top: 100px;
+        
+    }
+    .feature-row{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .feature-col{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+    }
+    .feature-col img{
+        width: 200px;
+        
+    }
+    .feature-col>a{
+        display: inline-block;
+    }
+    @media(max-width:45px){
+        .container{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        #header{
+            min-height: 100vh;
+            background-image: none;
+        }
+        .header-text{
+            margin-top: 20px;
+        }
+        #menuBtn{
+            right: 20px;
+        }
+        #features{
+            margin-top: -20px;
+        }
+        .button{
+            margin-top: 10px;
+            margin-bottom: 10px;
+           
+        }
+    }
+
+    @media(max-width:1000px){
+        #header{
+            background-image: none;
+        }
+    }
+</style>
+</head>
+<body>
+    <section id="header">
+        <div class="container">
+            <div class="logoParent">
+                <div><img src="bank-icon-5968.png" class="logo"></div>
+                <div class="titlesss">Sparks Bank</div>
+            </div>
+            <div class="header-text">
+                <h1>Experience Make Online Payment</h1>
+                <br>
+                <p>No more waiting in the long queues,transfer the
+                    money very conveniently Bank System,a digital wallet platform and online payment system develop to power in-app, online, and in-person contactless  transactions with mobile phones. </p>
+                    <br>
+                <a href="Register.php"><button class="button">Register Yourself</button></a>
+                    <div class="line">
+                        
+                        <span class="line2"></span><br><br>
+                        <span class="line3"></span>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+    <nav id="sideNav">
+        <ul>
+            <li><a href="main.html">HOME</a></li>
+            <li><a href="users.php">OUR CUSTOMERS</a></li>
+            <li><a href="history.php">TRANSACTION HISTORY</a></li>
+            <li><a href="users.php">TRANSFER MONEY</a></li>
+            <li><a href="Register.php">NEW USER</a></li>
+        </ul>
+    </nav>
+    <img src="menu.png" id="menuBtn">
+
+
+<!---FEATURES--->
+<section id="features">
+<div class="feature-row">
+    <div class="feature-col">
+        <img src="https://image.freepik.com/free-vector/customer-giving-quality-feedback_74855-5482.jpg">
+       <a href="users.php"> <button class="button" >Our Customers</button></a>
+    </div>
+    <div class="feature-col">
+        <img src="https://image.freepik.com/free-vector/people-using-mobile-bank-remittance-money_74855-6617.jpg">
+        <a href="history.php"><button class="button" >Transaction History</button></a>
+    </div>
+    <div class="feature-col">
+        <img src="https://image.freepik.com/free-vector/mobile-bank-users-transferring-money-currency-conversion-tiny-people-online-payment-cartoon-illustration_74855-14454.jpg">
+        <a href="users.php"><button class="button" >Transfer Money</button></a>
+    </div>
+</div>
+
+</section>
+<!-- FOOTER-->
+
+
+
+    <script>
+        var menuBtn=document.getElementById("menuBtn");
+        var sideNav=document.getElementById("sideNav");
+        sideNav.style.right="-250px"
+        menuBtn.onclick=function(){
+            if(sideNav.style.right=="-250px"){
+                sideNav.style.right="0px";
+            }
+            else{
+                sideNav.style.right="-250px";
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
